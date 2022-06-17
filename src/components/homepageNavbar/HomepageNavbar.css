@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    background-color: var(--color--white);
+    height: 64px;
+    border-bottom: 1px solid var(--color--dark-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__logo--disco-ball {
+    height: 32px;
+    width: 32px;
+    margin-right: 10px;
+}
+.header__logo--text {
+    color: var(--color--gradient);
+    font-family: Ubuntu;
+    font-size: 24px;
+    line-height: 28px;
+}
