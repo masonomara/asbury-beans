@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* variables */
+:root {
+  --color--gradient: linear-gradient(90deg, #1E71E6, #1C83E3, #048DD7);
+  --color--primary: #3881FF;
+  --color--dark-black: #222222;
+  --color--light-black: #717171;
+  --color--dark-gray: #DDDDDD;
+  --color--light-gray: #F7F7F7;
+  --color--white: #ffffff;
+}
+
+/* base styles */
+body {
+  font-family: Nunito Sans, sans-serif;
+  margin: 0;
+  font-size: 1.1em;
+  background: var(--color--gradient);
+}
+ul, li, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+}
+
+/* layout */
+.page-title {
+  font-size: 1em;
+  color: var(--heading-color);
+  display: inline-block;
+}
+.btn {
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: var(--primary-color);
+  cursor: pointer;
+  font-size: 1em;
+  border: 1px solid var(--primary-color);
+}
+.btn:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* forms */
+label {
+  display: block;
+  margin: 24px auto;
+}
+label span {
+  display: block;
+  margin-bottom: 6px;
+}
+input, textarea {
+  padding: 8px 6px;
+  font-size: 1em;
+  color: #777;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+textarea {
+  min-height: 160px;
+}
+.error {
+  color: red;
+  background: pink;
+  border: 1px solid red;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 10px 0;
+}
