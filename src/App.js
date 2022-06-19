@@ -8,6 +8,7 @@ import Homepage from './pages/homepage/Homepage.js'
 import Event from './pages/event/Event.js'
 import Submit from './pages/submit/Submit.js'
 import VenueCalendar from './pages/venueCalendar/VenueCalendar.js'
+import VenueList from './pages/venueList/VenueList'
 
 
 
@@ -23,15 +24,19 @@ function App() {
             <Route exact path="/">
               <Homepage />
             </Route>
-            <Route exact path="/event/:id">
+            <Route path="/event/:id">
               <Event />
             </Route>
-            <Route exact path="/submit">
+            <Route path="/submit">
               <Submit />
             </Route>
-            <Route exact path="/venue-calendar/:id">
+            <Route path="/venue-calendar/:id">
               <VenueCalendar />
             </Route>
+            <Route path="/venues">
+              <VenueList />
+            </Route>
+
           </Switch>
         </div>
       </BrowserRouter>
