@@ -39,3 +39,7 @@
     line-height: 28px;
     padding-right: 4px;
 }
+.header__logo--chevron {
+    filter: invert(36%) sepia(20%) saturate(7485%) hue-rotate(204deg) brightness(94%) contrast(90%);
+    margin-bottom: -4px;
+}

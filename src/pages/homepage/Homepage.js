@@ -6,7 +6,7 @@ import './Homepage.css'
 
 // images
 import Logo from '../../assets/logo.png'
-import DownChevron from '../../assets/icons/20px/down.png'
+import DownChevron from '../../assets/icons/down.png'
 
 export default function Homepage() {
 
@@ -23,10 +23,12 @@ export default function Homepage() {
       <div>
         <div className="header">
           <div className="container--flex">
+
+
             <div className="header__logo" onClick={handleOpenHomeNavOptions}>
               <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
-              <img className="header__logo--chevron" src={DownChevron} alt="chevron" />
+              <img className="header__logo--chevron icon--16px" src={DownChevron} alt="chevron" />
             </div>
 
             {showHomeNavOptions &&
@@ -39,7 +41,7 @@ export default function Homepage() {
                   Venues
                 </div>
               </NavLink>  
-            </div>            
+            </div>       
             }
 
           </div>  

@@ -11,6 +11,17 @@
   --color--white: #ffffff;
 }
 
+/* icons */
+.icon--16px {
+  height: 16px;
+  width: 16px;
+}
+
+.icon--24px {
+  height: 24px;
+  width: 24px;
+}
+
 /* base styles */
 body {
   font-family: Nunito Sans, sans-serif;
