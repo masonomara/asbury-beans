@@ -55,7 +55,7 @@ export default function Venues() {
           }
 
           <div>
-            <div className="button--icon">
+            <div className="button__icon">
               <img className="icon--24px" alt="menu" src={menu} />
             </div>
           </div>

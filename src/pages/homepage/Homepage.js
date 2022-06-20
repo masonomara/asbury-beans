@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import './Homepage.css'
 
 // components
-import '../../components/menu/Menu.js'
+import Menu from '../../components/menu/Menu.js'
 
 // images
 import logo from '../../assets/logo.png'
@@ -33,7 +33,9 @@ export default function Homepage() {
 
   return (
       <div>
-
+        {showMenu && 
+        <Menu handleCloseMenu={handleCloseMenu} />
+        }
         <div className="header">
           <div className="container--flex">
           {hideHomeNavOptions ?
@@ -63,7 +65,7 @@ export default function Homepage() {
             </div>    
             }
             <div>
-              <div className="button--icon" onClick={handleOpenMenu}>
+              <div className="button__icon" onClick={handleOpenMenu}>
                 <img className="icon--24px" alt="menu" src={menu} />
               </div>
             </div>

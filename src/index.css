@@ -57,43 +57,43 @@
 
 
 /* fonts */
-.title {
+.font__title {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
 }
-.subtitle {
+.font__subtitle {
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
 }
-.callout {
+.font__callout {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
-.callout--low {
+.font__callout--low {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
 }
-.label {
+.font__label {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
 }
-.body {
+.font__body {
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-.header {
+.font__header {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -127,7 +127,7 @@
 
 
 /* icon buttons */
-.button--icon {
+.button__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,12 +137,37 @@
   cursor: pointer;
   border-radius: 1000px;
 }
-.button--icon:hover {
+.button__icon:hover {
   background-color: var(--color--dark-modifier--1);
 }
-.button--icon:active {
+.button__icon:active {
   background-color: var(--color--dark-modifier--2);
 }
+.button__icon--low {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: var(--color--transparent);
+  cursor: pointer;
+  border-radius: 1000px;
+}
+.button__icon--low:hover {
+  opacity: 64%;
+}
+.button__icon--low:active {
+  opacity: 64%;
+}
+
+
+
+
+/* hidden */
+.hidden {
+  opacity: 0%;
+}
+
 
 
 
