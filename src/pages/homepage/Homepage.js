@@ -57,9 +57,7 @@ export default function Homepage() {
               </div>
               <div className="break" />
               <NavLink className="list-item callout" to="/venues">
-                <div>
                   <span>Venues</span>
-                </div>
               </NavLink>  
             </div>   
             </div>    

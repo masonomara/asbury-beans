@@ -59,6 +59,7 @@
 .button--text {
   min-width: 120px;
   height: 44px;
+  padding: 0px 16px;
   background-color: var(--color--transparent);
   color: var(--color--dark-black);
   border-radius: 8px;
@@ -75,8 +76,9 @@
 }
 .button--filled {
   min-width: 120px;
+  padding: 0px 16px;
   height: 44px;
-  background-color: var(--color--gradient);
+  background-image: var(--color--gradient);
   color: var(--color--white);
   border-radius: 8px;
   display: flex;
@@ -85,10 +87,10 @@
   text-decoration: none;
 }
 .button--filled:hover {
-  background-color: var(--color--dark-modifier--1);
+  opacity: 92%;
 }
 .button--filled:active {
-  background-color: var(--color--dark-modifier--2);
+  opacity: 88%;
 }
 
 
