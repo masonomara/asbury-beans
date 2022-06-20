@@ -11,6 +11,8 @@
 }
 .header .container--flex {
     height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 
@@ -47,7 +49,7 @@
 }
 
 
-.home__nav-options {
+.header__nav-options {
     border: var(--color--dark-gray) 1px solid;
     background-color: var(--color--white);
     border-radius: 0px 0px 4px 4px;
@@ -56,6 +58,6 @@
     color: var(--color--dark-black);
     margin-right: -4px;
 }
-.home__nav-options__check {
+.header__nav-options__check {
     filter: invert(40%) sepia(82%) saturate(4709%) hue-rotate(206deg) brightness(96%) contrast(88%);
 }

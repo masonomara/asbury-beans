@@ -8,7 +8,7 @@ import Homepage from './pages/homepage/Homepage.js'
 import Event from './pages/event/Event.js'
 import Submit from './pages/submit/Submit.js'
 import VenueCalendar from './pages/venueCalendar/VenueCalendar.js'
-import VenueList from './pages/venueList/Venues'
+import Venues from './pages/venues/Venues'
 
 
 
@@ -34,7 +34,7 @@ function App() {
               <VenueCalendar />
             </Route>
             <Route path="/venues">
-              <VenueList />
+              <Venues />
             </Route>
 
           </Switch>

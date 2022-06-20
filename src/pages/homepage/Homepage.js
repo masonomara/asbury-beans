@@ -5,9 +5,10 @@ import { NavLink } from 'react-router-dom'
 import './Homepage.css'
 
 // images
-import Logo from '../../assets/logo.png'
-import DownChevron from '../../assets/icons/down.png'
-import Check from '../../assets/icons/check.png'
+import logo from '../../assets/logo.png'
+import down from '../../assets/icons/down.png'
+import check from '../../assets/icons/check.png'
+import menu from '../../assets/icons/menu.png'
 
 export default function Homepage() {
 
@@ -27,24 +28,24 @@ export default function Homepage() {
 
           {hideHomeNavOptions ?
             <div className="header__logo" onClick={handleOpenHomeNavOptions}>
-              <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
+              <img className="header__logo--disco-ball" src={logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
-              <img className="header__logo--chevron icon--16px" src={DownChevron} alt="chevron" />
+              <img className="header__logo--chevron icon--16px" src={down} alt="chevron" />
             </div> :
 
             <>
             <div className="header__logo" onClick={handleCloseHomeNavOptions}>
-              <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
+              <img className="header__logo--disco-ball" src={logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
-              <img className="header__logo--chevron icon--16px" src={DownChevron} alt="chevron" />
+              <img className="header__logo--chevron icon--16px" src={down} alt="chevron" />
             </div>
-            <div className="home__nav-options">
-              <div className="list-item home__nav-options__events callout" onClick={handleCloseHomeNavOptions}>
+            <div className="header__nav-options">
+              <div className="list-item callout" onClick={handleCloseHomeNavOptions}>
                 <span>Events</span>
-                <img className="icon--16px home__nav-options__check" alt="check" src={Check} />
+                <img className="icon--16px header__nav-options__check" alt="check" src={check} />
               </div>
               <div className="break" />
-              <NavLink className="list-item home__nav-options__venues callout" to="/venues">
+              <NavLink className="list-item callout" to="/venues">
                 <div>
                   <span>Venues</span>
                 </div>
@@ -52,6 +53,12 @@ export default function Homepage() {
             </div>   
             </>    
             }
+
+            <div>
+              <div className="button--icon">
+                <img className="icon--24px" alt="menu" src={menu} />
+              </div>
+            </div>
 
           </div>  
         </div>

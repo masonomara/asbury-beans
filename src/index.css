@@ -9,7 +9,50 @@
   --color--dark-gray: #DDDDDD;
   --color--light-gray: #F7F7F7;
   --color--white: #ffffff;
+  --color--transparent: rgba(0 0 0 / 0);
+  --color--dark-modifier--1: rgba(0 0 0 / 0.03);
+  --color--dark-modifier--2: rgba(0 0 0 / 0.13);
+  --color--light-modifier--1: rgba(255 255 255 / 0.03);
+  --color--light-modifier--2: rgba(255 255 255 / 0.13);
 }
+
+
+
+/* containers */
+.container--flex {
+  display: flex;
+  flex-direction: column;
+  width: 1128px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1439px) {
+  .container--flex {
+    width: 100%;
+    padding: 0px 200px;
+  }
+}
+@media screen and (max-width: 1239px) {
+  .container--flex {
+    width: 100%;
+    padding: 0px 48px;
+  }
+}
+@media screen and (max-width: 904px) {
+  .container--flex {
+    width: 100%;
+    padding: 0px 32px;
+  }
+}
+@media screen and (max-width: 599px) and (min-width: 2px) {
+  .container--flex {
+    width: 100%;
+    padding: 0px 16px;
+  }
+}
+
+
+
 
 /* fonts */
 .title {
@@ -55,12 +98,18 @@
   line-height: 20px;
 }
 
+
+
+
 /* line break */
 .break {
   background-color: var(--color--light-gray);
   height: 1px;
   width: 100%;
 }
+
+
+
 
 /* icons */
 .icon--16px {
@@ -71,6 +120,29 @@
   height: 24px;
   width: 24px;
 }
+
+
+
+
+/* icon buttons */
+.button--icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  background-color: var(--color--transparent);
+  cursor: pointer;
+  border-radius: 1000px;
+}
+.button--icon:hover {
+  background-color: var(--color--dark-modifier--1);
+}
+.button--icon:active {
+  background-color: var(--color--dark-modifier--2);
+}
+
+
 
 /* list items */
 .list-item {
