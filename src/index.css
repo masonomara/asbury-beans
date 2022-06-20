@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-  --color--gradient: linear-gradient(90deg, #1E71E6 0%, #1C83E3 50%, #048DD7 100%);
+  --color--gradient: linear-gradient(90deg, #1E71E6, #1C83E3, #048DD7);
   --color--primary: #3881FF;
   --color--dark-black: #222222;
   --color--light-black: #717171;
@@ -55,49 +55,94 @@
 
 
 
+/* buttons */
+.button--text {
+  min-width: 120px;
+  height: 44px;
+  background-color: var(--color--transparent);
+  color: var(--color--dark-black);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.button--text:hover {
+  background-color: var(--color--dark-modifier--1);
+}
+.button--text:active {
+  background-color: var(--color--dark-modifier--2);
+}
+.button--filled {
+  min-width: 120px;
+  height: 44px;
+  background-color: var(--color--gradient);
+  color: var(--color--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.button--filled:hover {
+  background-color: var(--color--dark-modifier--1);
+}
+.button--filled:active {
+  background-color: var(--color--dark-modifier--2);
+}
+
+
+
+
 
 /* fonts */
-.font__title {
+.font--title {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
 }
-.font__subtitle {
+.font--subtitle {
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 19px;
 }
-.font__callout {
+.font--callout {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
-.font__callout--low {
+.font--callout--low {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
 }
-.font__label {
+.font--label {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
 }
-.font__body {
+.font--body {
   font-family: Nunito Sans, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
-.font__header {
+.font--header {
   font-family: Nunito Sans, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+.font--caption {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 
@@ -166,6 +211,7 @@
 /* hidden */
 .hidden {
   opacity: 0%;
+  cursor: auto;
 }
 
 

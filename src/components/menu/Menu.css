@@ -1,9 +1,12 @@
 .menu__backdrop {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color:rgba(0, 0, 0, 0.50);
   z-index: 50;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -20,11 +23,11 @@
 }
 @media screen and (max-width: 904px) and (min-width: 2px) {
     .menu {
-      width: 100%;
-      margin-left: 0px;
-      position: absolute;
-      left: 0px;
-      border-radius: 0px;
+      height: auto;
+      position: static;
+      border-radius: 16px;
+      overflow: hidden;
+      width: 288px;
     }
   }
 
@@ -35,4 +38,17 @@
   justify-content: space-between;
   padding: 0px 8px;
   height: 44px;
+}
+
+.menu__cta {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 16px;
+  text-align: center;
+}
+.menu__cta #lowdown {
+    margin-top: 2px;
+    color: var(--color--light-black);
+    margin-bottom: 24px;
 }
