@@ -11,13 +11,13 @@ import Check from '../../assets/icons/check.png'
 
 export default function Homepage() {
 
-  const [showHomeNavOptions, setShowHomeNavOptions] = useState(false)
+  const [hideHomeNavOptions, setHideHomeNavOptions] = useState(true)
 
   const handleCloseHomeNavOptions = () => {
-    setShowHomeNavOptions(false)
+    setHideHomeNavOptions(true)
   }
   const handleOpenHomeNavOptions = () => {
-    setShowHomeNavOptions(true)
+    setHideHomeNavOptions(false)
   }
 
   return (
@@ -25,21 +25,21 @@ export default function Homepage() {
         <div className="header">
           <div className="container--flex">
 
-          {showHomeNavOptions ?
-            <div className="header__logo" onClick={handleCloseHomeNavOptions}>
+          {hideHomeNavOptions ?
+            <div className="header__logo" onClick={handleOpenHomeNavOptions}>
               <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
               <img className="header__logo--chevron icon--16px" src={DownChevron} alt="chevron" />
             </div> :
 
             <>
-            <div className="header__logo" onClick={handleOpenHomeNavOptions}>
+            <div className="header__logo" onClick={handleCloseHomeNavOptions}>
               <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
               <img className="header__logo--chevron icon--16px" src={DownChevron} alt="chevron" />
             </div>
             <div className="home__nav-options">
-              <div className="list-item home__nav-options__events callout" onClick={handleOpenHomeNavOptions}>
+              <div className="list-item home__nav-options__events callout" onClick={handleCloseHomeNavOptions}>
                 <span>Events</span>
                 <img className="icon--16px" alt="check" src={Check} />
               </div>
