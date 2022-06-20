@@ -46,6 +46,11 @@ export default function Menu({ handleCloseMenu }) {
           </div>
 
           <div className="menu__info">
+            <span className="font--caption">All user-submitted content owned by the Poster</span>
+            <div className="font--label" id="masonplug">
+              <span>Asbury Beans was designed, built, and is maintained by </span>
+              <ExternalLink  id="masonpluglink" href="https://www.masonomara.com">Mason O'Mara</ExternalLink>
+            </div>
           </div>
 
         </div>

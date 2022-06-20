@@ -67,3 +67,23 @@
   flex-direction: column;
   border-bottom: 1px solid var(--color--dark-gray);
 }
+
+.menu__info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 16px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+.menu__info #masonplug {
+  color: var(--color--light-black);
+  font-weight: 400;
+  margin-top: 4px;
+}
+.menu__info #masonpluglink {
+    color: var(--color--light-black);
+    font-weight: 400;
+  }
