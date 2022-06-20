@@ -11,7 +11,49 @@
   --color--white: #ffffff;
 }
 
-
+/* fonts */
+.title {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 19px;
+}
+.subtitle {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.callout {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+.callout--low {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.label {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+.body {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.header {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
 
 /* icons */
 .icon--16px {
@@ -32,6 +74,14 @@
   align-items: center;
   color: var(--color--dark-black);
   text-decoration: none;
+  background-color: var(--color--white);
+  cursor: pointer;
+}
+.list-item:hover {
+  background-color: var(--color--light-gray);
+}
+.list-item:focus {
+  background-color: var(--color--dark-gray);
 }
 
 /* base styles */

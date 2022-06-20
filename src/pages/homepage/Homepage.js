@@ -7,6 +7,7 @@ import './Homepage.css'
 // images
 import Logo from '../../assets/logo.png'
 import DownChevron from '../../assets/icons/down.png'
+import Check from '../../assets/icons/check.png'
 
 export default function Homepage() {
 
@@ -24,7 +25,6 @@ export default function Homepage() {
         <div className="header">
           <div className="container--flex">
 
-
             <div className="header__logo" onClick={handleOpenHomeNavOptions}>
               <img className="header__logo--disco-ball" src={Logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
@@ -33,12 +33,13 @@ export default function Homepage() {
 
             {showHomeNavOptions &&
             <div className="home__nav-options">
-              <div className="home__nav-options__events" onClick={handleCloseHomeNavOptions}>
-                Events
+              <div className="list-item home__nav-options__events callout" onClick={handleCloseHomeNavOptions}>
+                <span>Events</span>
+                <img className="icon--16px" alt="check" src={Check} />
               </div>
-              <NavLink className="home__nav-options__venues" to="/venues">
+              <NavLink className="list-item home__nav-options__venues callout" to="/venues">
                 <div onClick={handleCloseHomeNavOptions}>
-                  Venues
+                  <span>Venues</span>
                 </div>
               </NavLink>  
             </div>       
