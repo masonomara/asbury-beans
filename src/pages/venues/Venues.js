@@ -33,7 +33,7 @@ export default function Venues() {
             <img className="header__logo--chevron icon--16px" src={down} alt="chevron" />
           </div> :
 
-          <>
+          <div>
           <div className="header__logo" onClick={handleCloseVenuesNavOptions}>
             <img className="header__logo--disco-ball" src={logo} alt="disco ball" />
             <span className="header__logo--text">Venues</span>
@@ -51,8 +51,14 @@ export default function Venues() {
               <img className="icon--16px header__nav-options__check" alt="check" src={check} />
             </div>
           </div>   
-          </>    
+          </div>    
           }
+
+          <div>
+            <div className="button--icon">
+              <img className="icon--24px" alt="menu" src={menu} />
+            </div>
+          </div>
 
         </div>  
       </div>

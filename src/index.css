@@ -7,13 +7,15 @@
   --color--dark-black: #222222;
   --color--light-black: #717171;
   --color--dark-gray: #DDDDDD;
-  --color--light-gray: #F7F7F7;
+  --color--light-gray: #eeeeee;
   --color--white: #ffffff;
   --color--transparent: rgba(0 0 0 / 0);
-  --color--dark-modifier--1: rgba(0 0 0 / 0.03);
-  --color--dark-modifier--2: rgba(0 0 0 / 0.13);
-  --color--light-modifier--1: rgba(255 255 255 / 0.03);
-  --color--light-modifier--2: rgba(255 255 255 / 0.13);
+  --color--dark-modifier--1: rgba(34 34 34 / 0.08);
+  --color--dark-modifier--2: rgba(34 34 34 / 0.12);
+  --color--light-modifier--1: rgba(255 255 255 / 0.08);
+  --color--light-modifier--2: rgba(255 255 255 / 0.12);
+  --color--primary-modifier--1: rgba(56 129 255 / 0.08);
+  --color--primary-modifier--1: rgba(56 129 255 / 0.12);
 }
 
 

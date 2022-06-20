@@ -33,7 +33,7 @@ export default function Homepage() {
               <img className="header__logo--chevron icon--16px" src={down} alt="chevron" />
             </div> :
 
-            <>
+            <div>
             <div className="header__logo" onClick={handleCloseHomeNavOptions}>
               <img className="header__logo--disco-ball" src={logo} alt="disco ball" />
               <span className="header__logo--text">Events</span>
@@ -51,7 +51,7 @@ export default function Homepage() {
                 </div>
               </NavLink>  
             </div>   
-            </>    
+            </div>    
             }
 
             <div>
