@@ -41,8 +41,9 @@ export default function Homepage() {
             <div className="home__nav-options">
               <div className="list-item home__nav-options__events callout" onClick={handleCloseHomeNavOptions}>
                 <span>Events</span>
-                <img className="icon--16px" alt="check" src={Check} />
+                <img className="icon--16px home__nav-options__check" alt="check" src={Check} />
               </div>
+              <div className="break" />
               <NavLink className="list-item home__nav-options__venues callout" to="/venues">
                 <div>
                   <span>Venues</span>

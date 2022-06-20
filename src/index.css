@@ -55,6 +55,13 @@
   line-height: 20px;
 }
 
+/* line break */
+.break {
+  background-color: var(--color--light-gray);
+  height: 1px;
+  width: 100%;
+}
+
 /* icons */
 .icon--16px {
   height: 16px;
