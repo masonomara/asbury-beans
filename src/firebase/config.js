@@ -17,9 +17,9 @@ const firebaseConfig = {
 
   // init services
   const projectFirestore = firebase.firestore();
-  const storage = firebase.storage();
+  const projectStorage = firebase.storage();
 
   // timestampSampl
   const timestamp = firebase.firestore.Timestamp
 
-  export { projectFirestore }
+  export { projectFirestore, projectStorage, timestamp }
