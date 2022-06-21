@@ -4,7 +4,7 @@ import { useState } from 'react'
 import './Venues.css'
 
 // components
-import VenuesHeader from '../../components/venuesHeader/VenuesHeaeder.js'
+import VenuesHeader from '../../components/venuesHeader/VenuesHeader'
 import VenuesGrid from '../../components/venuesGrid/VenuesGrid.js'
 
 
