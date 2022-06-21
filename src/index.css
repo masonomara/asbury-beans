@@ -52,6 +52,7 @@
     padding: 0px 16px;
   }
 }
+ 
 
 
 
@@ -243,7 +244,7 @@ body {
   font-family: Nunito Sans, sans-serif;
   margin: 0;
   font-size: 1.1em;
-  background: var(--color--light-gray);
+  background: var(--color--white);
 }
 ul, li, p, h1, h2, h3, h4 {
   margin: 0;

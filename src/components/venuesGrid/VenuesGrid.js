@@ -7,13 +7,13 @@ export default function VenuesGrid() {
   const { isPending, error, documents } = useCollection('venues')
 
   return (
-    <div className="venues-grid">
+    <div className="venues__grid container--flex">
       {isPending && <div>Loading venues...</div>}
       {error && <div className="error">{error}</div>}
       {documents && documents.map(venue => (
         <div key={venue.id} className="venue-card">
           <div className="venue-card__photo__container">
-            <img className="venuePhoto" src={venue.photoURL} alt=" " />
+            <div className="venue-card__photo" style={{ backgroundImage:`url(${venue.photoURL})` }} />
           </div>
           <div className="venue-card__info">
             <span className="venue-card__title font--title">{venue.name}</span>
