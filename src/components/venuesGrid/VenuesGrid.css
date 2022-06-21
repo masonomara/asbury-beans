@@ -1,14 +1,20 @@
 .venues__grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  padding-top: 72px;
-  align-items: top;
-  justify-content: space-between;
+  padding-top: 64px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+  align-items: stretch;
+  display: grid;
 }
 .venues__grid::after {
   content: "";
   flex: auto;
+}
+@media screen and (max-width: 904px) {
+  .venues__grid {
+    grid-gap:16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-top: 72px;
+  }
 }
 
 
@@ -16,34 +22,22 @@
 
 .venue-card {
   background-color: var(--color--white);
-  width: calc(25% - 6px);
+  width: 100%;
   border-radius: 16px;
   cursor: pointer;
-  margin-top: 8px;
+  margin-top: 16px;
 }
 .venue-card:hover {
-  background-color: rgba( 0 0 0 / 0.04);
-}
-@media screen and (max-width: 1439px) {
-  .venue-card {
-    width: calc(33% - (16px / 3));
-  }
-}
-@media screen and (max-width: 1239px) {
-  .venue-card {
-    width: calc(33% - (16px / 3));
-  }
+  background-color: rgba( 0 0 0 / 0.02);
 }
 @media screen and (max-width: 904px) {
   .venue-card:hover {
     background-color: var(--color--white);
   }
 }
-@media screen and (max-width: 599px) and (min-width: 2px) {
-  .venue--card {
-    width: 100%;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 0px 16px;
+@media screen and (max-width: 904px) {
+  .venue-card {
+    margin-top: 8px;
   }
 }
 
@@ -79,6 +73,11 @@
 .venue-card__info {
   padding: 0px 8px 12px 8px;
 }
+@media screen and (max-width: 904px) {
+  .venue-card__info {
+    padding: 8px 0px 0px 0px;
+  }
+}
 
 
 
@@ -87,10 +86,9 @@
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* number of lines to show */
-          line-clamp: 1; 
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2; 
   -webkit-box-orient: vertical;
-  height: 19px;
 }
 
 
@@ -105,5 +103,4 @@
   -webkit-line-clamp: 2; /* number of lines to show */
           line-clamp: 2; 
   -webkit-box-orient: vertical;
-  height: 38px;
 }
