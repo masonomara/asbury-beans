@@ -51,12 +51,12 @@ export default function Homepage() {
               <img className="header__logo--chevron icon--16px" src={down} alt="chevron" />
             </div>
             <div className="header__nav-options">
-              <div className="list-item callout" onClick={handleCloseHomeNavOptions}>
+              <div className="list-item font--callout" onClick={handleCloseHomeNavOptions}>
                 <span>Events</span>
                 <img className="icon--16px header__nav-options__check" alt="check" src={check} />
               </div>
               <div className="break" />
-              <NavLink className="list-item callout" to="/venues">
+              <NavLink className="list-item font--callout" to="/venues">
                   <span>Venues</span>
               </NavLink>  
             </div>   
