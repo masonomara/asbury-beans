@@ -6,6 +6,7 @@ import './Homepage.css'
 
 // components
 import Menu from '../../components/menu/Menu.js'
+import EventsGrid from '../../components/eventsGrid/EventsGrid'
 
 // images
 import logo from '../../assets/logo.png'
@@ -69,6 +70,11 @@ export default function Homepage() {
             </div>
           </div>  
         </div>
+
+        <div className="content--container">
+          <EventsGrid />
+        </div>
+
       </div>
   )
 }

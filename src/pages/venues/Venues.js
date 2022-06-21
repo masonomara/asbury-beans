@@ -29,7 +29,14 @@ export default function Venues() {
   return (
       <div className="venues">
 
-      <VenuesHeader hideVenuesNavOptions={hideVenuesNavOptions} showMenu={showMenu} handleCloseVenuesNavOptions={handleCloseVenuesNavOptions} handleOpenVenuesNavOptions={handleOpenVenuesNavOptions} handleCloseMenu={handleCloseMenu} handleOpenMenu={handleOpenMenu} />    
+      <VenuesHeader 
+        hideVenuesNavOptions={hideVenuesNavOptions}
+        showMenu={showMenu}
+        handleCloseVenuesNavOptions={handleCloseVenuesNavOptions}
+        handleOpenVenuesNavOptions={handleOpenVenuesNavOptions}
+        handleCloseMenu={handleCloseMenu}
+        handleOpenMenu={handleOpenMenu}
+      />    
       <div className="content--container">
         <VenuesGrid />
       </div>
