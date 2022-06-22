@@ -4,7 +4,8 @@ import { useCollection } from '../../hooks/useCollection.js'
 import './EventsGrid.css'
 
 export default function EventsGrid() {
-  const { isPending, error, documents } = useCollection('events')
+  const { isPending, error, documents } = useCollection('events');
+
 
   return (
     <div className="events__grid container--flex">
@@ -18,7 +19,7 @@ export default function EventsGrid() {
           <div className="event-card__info">
             <span className="event-card__title font--title">{event.name}</span>
             <div className="event-card__address font--subtitle">
-              <span>{event.address}</span>
+              <span>{event.name}</span>
               <span>, </span>
               <span>{event.city}</span>
             </div>
