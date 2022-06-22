@@ -1,4 +1,5 @@
 import { useCollection } from '../../hooks/useCollection.js'
+import EventsGridVenueName from '../eventsGridVenueName/EventsGridVenueName.js';
 
 // styles
 import './EventsGrid.css'
@@ -19,9 +20,7 @@ export default function EventsGrid() {
           <div className="event-card__info">
             <span className="event-card__title font--title">{event.name}</span>
             <div className="event-card__address font--subtitle">
-              <span>{event.name}</span>
-              <span>, </span>
-              <span>{event.city}</span>
+              <EventsGridVenueName id={event.venue}/>
             </div>
           </div>
         </div>
